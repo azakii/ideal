@@ -1,0 +1,46 @@
+/*
+	IdealSolutions Theme
+	Author: Ahmed Zaki
+	Version 0.0.1
+*/  
+ /*-----------------------------------------------------------------------------------------------------------------------------
+     _                _  _     _                                      _      _                                       _    _
+    | |              ( )| |   | |                                    | |    | |                                     | |  | |
+  __| |  ___   _ __  |/ | |_  | |__    ___    __ _   ___    ___    __| |    | |__    ___    __ _  _ __   ___   __ _ | |_ | |
+ / _` | / _ \ | '_ \    | __| | '_ \  / _ \  / _` | / _ \  / _ \  / _` |    | '_ \  / _ \  / _` || '__| / _ \ / _` || __|| |
+| (_| || (_) || | | |   | |_  | |_) ||  __/ | (_| || (_) || (_) || (_| | _  | |_) ||  __/ | (_| || |   |  __/| (_| || |_ |_|
+ \__,_| \___/ |_| |_|    \__| |_.__/  \___|  \__, | \___/  \___/  \__,_|( ) |_.__/  \___|  \__, ||_|    \___| \__,_| \__|(_)
+                                              __/ |                     |/                  __/ |
+                                             |___/                                         |___/
+ksp----------------------------------------------------------------------------------------------------------------------------
+*/
+
+
+//lib
+
+@import 'lib/_mui.scss';
+@import 'lib/_fontawesome.scss';
+@import 'lib/_animate.scss';
+@import 'lib/_aos.scss';
+
+// @import 'lib/_core.scss';
+
+
+// Base
+@import 'base/_normalize.scss';
+@import 'base/_variables.scss';
+@import 'base/_mixins.scss';
+
+// Contents
+@import 'layout/_typography.scss';
+@import 'layout/_core.scss';
+@import 'layout/_header.scss';
+@import 'layout/_footer.scss';
+
+
+// Layout
+
+@import 'layout/_main.scss';
+@import 'layout/_responsive.scss';
+
+

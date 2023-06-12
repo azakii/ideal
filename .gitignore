@@ -25,4 +25,6 @@ yarn-error.log*
 
 /plugins
 
-resources/jquery/*
+# resources/jquery/*
+resources/backup
+/.sass-cache

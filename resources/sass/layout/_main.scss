@@ -391,7 +391,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 26px;
-  letter-spacing: 0.035em;
+  // letter-spacing: 0.035em;
   text-transform: uppercase;
   color: #000000;
 }
@@ -406,4 +406,512 @@
       border: 1px solid #77CEDD;
       box-shadow: 1px 9px 9px -3px rgba(0, 0, 0, 0.08);
     }
+}
+
+.newJobs-container {
+  .card-body {
+    padding: 0;
+    box-shadow: none;
+  }
+  .btn-success {
+    background-color: $terquoise2;
+    border: 0;
+    &:hover {
+      background-color: $terquoise;
+    }
+  }
+  .card {
+    box-shadow: none;
+    border-radius: 10px;
+  }
+  .task-managments {
+    background: rgba(60, 114, 184, 0.109);
+    border-radius: 0px 10px 10px 0px;
+    padding: 2rem 0;
+    height: 100%;
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      padding: 0 2rem;
+      label {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 21px;
+        text-transform: uppercase;
+      }
+      input {
+        height: 39px;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        border-radius: 5px;
+      }
+      
+    }
+    .select2-container--default .select2-selection--single {
+        padding-left: 40px;
+    }
+    .priority {
+      position: relative;
+      &::before {
+        position: absolute;
+        bottom: 11px;
+        left: 40px;
+        content: '';
+        background-image: url(../img/flag.svg);
+        width: 22px;
+        height: 22px;
+        z-index: 99;
+      }
+    }
+    .skillset {
+      position: relative;
+      &::before {
+        position: absolute;
+        bottom: 11px;
+        left: 40px;
+        content: '';
+        background-image: url(../img/skillset.svg);
+        width: 22px;
+        height: 22px;
+        z-index: 99;
+      }
+    }
+    .availability {
+      position: relative;
+      &::before {
+        position: absolute;
+        bottom: 11px;
+        left: 40px;
+        content: '';
+        background-image: url(../img/availabilty.svg);
+        width: 22px;
+        height: 22px;
+        z-index: 99;
+      }
+    }
+    .assign {
+      position: relative;
+      &::before {
+        position: absolute;
+        bottom: 11px;
+        left: 40px;
+        content: '';
+        background-image: url(../img/usr.svg);
+        width: 22px;
+        height: 22px;
+        z-index: 99;
+      }
+    }
+  }
+  .newJobs-container {
+  }
+  .tasks {
+    padding: 2rem 1rem;
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      label {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 21px;
+        color: #000000;
+      }
+      input {
+        height: 44px;
+      }
+      textarea {
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        border-radius: 5px;
+        height: 266px;
+      }
+    } 
+  }
+  .btn-primary {
+    background: #3C72B8;
+    border-radius: 5px;
+    height:49px;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    border: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+
+    &:hover {
+      background-color: black;
+    }
+   }
+}
+
+.alert-danger {
+  background: rgba(199, 55, 109, 0.05);
+  border: 1px solid rgba(199, 55, 109, 0.4);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #C7376D;
+    margin-left: 1rem;
+  }
+  
+  .remove {
+    span {
+      font-size: 1rem;
+    }
+  }
+}
+
+.dashboard {
+  .btn-success {
+    background-color: $terquoise2;
+    border: 0;
+    &:hover {
+      background-color: $terquoise;
+    }
+  }
+  .percent-green {
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+    color: #279302;
+    width: 45px;
+    height: 45px;
+    background: rgba(0, 166, 199, 0.089);
+    border-radius: 50%;
+    font-weight: 600;
+
+    &.red {
+      background: rgba(199, 55, 108, 0.1);
+      color: #CF0000;
+    }
+    &.orange {
+      background: rgba(255, 178, 63, 0.1);
+      color: #FFA800B8;
+    }
+  }
+  .stat {
+    padding: 25px;
+    h2 {
+      font-size: 47.81px;
+      line-height: 56px;
+      text-align: right;
+      color: #000000;
+      margin-top: 1rem;
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: right;
+      color: #000000;
+      opacity: 0.4;
+    }
+    border: 1px solid transparent;
+    box-shadow: 1px 9px 9px -3px rgba(0, 0, 0, 0.001);
+    transition: 1s;
+    &:hover {
+      border: 1px solid #77CEDD;
+      box-shadow: 1px 9px 9px -3px rgba(0, 0, 0, 0.08);
+    }
+  }
+}
+
+.card {
+  box-shadow: none;
+  border-radius: 10px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  left: 35%;
+  top: 80%;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+  padding-left: 0 !important;
+}
+
+
+.modal-body {
+  padding: 0 !important;
+  .col-md-8:first-child {
+    .list-wrapper {
+      padding: 35px 26px;
+    }
+  }
+  .list-wrapper {
+    h4 {
+      font-size: 14px;
+      line-height: 26px;
+      letter-spacing: 0.035em;
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+  .assignTeam {
+    margin-top: 3rem;
+    span {
+      font-size: 14px;
+      // line-height: 21px;
+      color: rgba(150, 150, 150, 0.75);
+    }
+  }
+  .status {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 26px;
+    letter-spacing: 0.035em;
+    text-transform: uppercase;
+    color: #C7376D;
+  }
+  svg {
+    width: 15px;
+  }
+  .newJobs-container {
+    .task-managments .form-group label {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: rgba(0, 0, 0, 0.2);
+    }
+    .btn-primary {
+      height: 42px;
+      line-height: 21px;
+      padding: 0;
+    }
+  }
+  
+}
+#exampleModal {
+  .modal-content {
+    border-radius: 15px;
+  }
+}
+.select2-dropdown {
+  z-index: 2000;
+}
+.task-managments {
+  .select2-selection--single {
+    border-radius: 10px;
+    padding-left: 1rem;
+  }
+}
+
+.login {
+  background-image: url(../img/login-bg.png);
+  background-position: center center;
+  background-size: auto 100%;
+  text-align: center;
+  img {
+    margin-bottom: 2rem;
+  }
+  .login-area {
+    background: linear-gradient(180deg, rgba(255,255,255,0.579) 0%, rgba(255,255,255,0) 100%);
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 22%);
+    backdrop-filter: blur(6px);
+    border-radius: 20px;
+    width: 320px;
+    @media only screen and (min-width: 1024px) {
+      width: 567px;
+      padding: 2rem 3rem;
+    }
+    h2 {
+      font-weight: 600;
+      font-size: 27.65px;
+      line-height: 32px;
+      margin-bottom: 1.5rem;
+      color: #FFFFFF;
+    }
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      margin-bottom: 1rem;
+      line-height: 24px;
+      text-align: center;
+      color: #FFFFFF;
+    }
+    a.auth-link {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 21px;
+      text-align: center;
+      text-decoration-line: underline;
+      color: #FFFFFF;
+    }
+    a.auth-form-btn {
+      background: #77CEDD;
+      border-radius: 8px;
+      border: 0;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 21px;
+      color: #FFFFFF;
+      transition: 1s;
+      &:hover {
+        border: 0;
+        background-color: black;
+      }
+    }
+
+    input{
+      font-weight: 600;
+      font-size: 16px;
+      &::placeholder {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        color: #05052C;
+      }
+    }
+    .text-center.mt-4.fw-light {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #FFFFFF;
+  
+      .text-primary {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 21px;
+        text-decoration-line: underline;
+        color: #FFF !important;
+      }
+    }
+    }
+  .email, .pass {
+    position: relative;
+    .icon {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+    }
+  }
+
+}
+
+.error {
+  border-color: red;
+}
+
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+   font-size:20px;
+
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 8px rgba(110, 110, 110, 0.1);
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: -10px;
+  left: -65px;
+  margin-left: -80px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #414D55;
+  width:122px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: -18px;
+  margin-left: -5px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent transparent #FFF;
+  /* box-shadow: 0px 1px 8px rgba(110,110,110,0.1); */
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+#successMessage {
+  opacity: 1; /* Initial opacity */
+  transition: opacity 1s; /* Transition property for smooth animation */
+ background-color: white;
+ width: 300px;
+ padding: 1rem;
+//  position: absolute;
+//  right: 0;
+ .icon {
+  margin-right: 15px;
+ }
+ h4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #039100;
+ }
+ p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  opacity: 0.7;
+ }
+ small {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  opacity: 0.3;
+ }
+}
+
+#successMessage.show {
+  opacity: 1;
+  transition: opacity 1s;
+  background-color: white;
+  width: 300px;
 }

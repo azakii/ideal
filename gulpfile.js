@@ -3,13 +3,15 @@ var gulp = require('gulp'),
 	notify = require("gulp-notify")
 	bower = require('gulp-bower')
 	browserSync = require('browser-sync').create()
-	uglify = require('gulp-uglify')
+	// uglify = require('gulp-uglify')
 	concat = require('gulp-concat')
 	rtlcss = require('gulp-rtlcss')
 	wrap = require('gulp-wrap')
 	rename = require('gulp-rename')
 	uncss = require('gulp-uncss')
-	size = require('gulp-size');
+	size = require('gulp-size')
+	babel = require('gulp-babel');
+
 
 var config = {
 	bowerDir: './bower_components/',
@@ -56,11 +58,21 @@ gulp.task('uncss', function () {
         .pipe(gulp.dest('./public/assets/stylesheet/min'));
 });
 
+gulp.task('compile-es6', () => {
+	return gulp
+	  .src(['./resources/jquery/plugins/*js', './resources/jquery/uicreep.js']) // Source files to compile
+	  .pipe(minify()) // Babel Minify
+	  .pipe(babel({ presets: ['@babel/preset-env'] })) // Babel compilation
+	  .pipe(concat('uicreep-minify.js'))
+	  .pipe(gulp.dest('config.jquery')); // Destination folder for compiled files
+  });
+
+  
 // TASK FOR MERGING ALL THE JS IN ONE
 // -----------------------------------------------------------
 gulp.task('js', function () {
 	return gulp.src(['./resources/jquery/plugins/*js', './resources/jquery/uicreep.js'])
-		.pipe(uglify())
+		// .pipe(uglify())
 		.pipe(wrap('\n// Jquery used is (<%= file.path %>)\n<%= contents %>'))
 		.pipe(concat('uicreep-minify.js'))
 		.pipe(size())
@@ -87,6 +99,7 @@ gulp.task('serve', ['sass'], function () {
 	gulp.watch(config.jqueryPath + "*js", ['js-watch']);
 	gulp.watch(config.jqueryPath + "*/*js", ['js-watch']);
 });
+
 
 // Task to get the size of the build project
 gulp.task('build-size', function() {  

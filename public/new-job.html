@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> IdealSolutions </title>
+    <link rel="icon" type="assets/img/favicon.ico" href="./assets/img/favicon.ico" />
+    <meta name="description" content="IdealSolutions Theme">
+    <meta name="author" content="azaki">
+    <meta name="theme-color" content="#FFF200" />
+    <!-- CSS -->
+    <link href="assets/stylesheet/uicreep.css" rel="stylesheet">
+    <link href="assets/stylesheet/custom.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+    <div class="container-scroller">
+      <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
+        <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
+          <div class="me-3">
+            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-bs-toggle="minimize">
+              <span class="icon-menu"></span>
+            </button>
+          </div>
+          <div>
+            <a class="navbar-brand brand-logo" href="index.html">
+              <img src="assets/img/logo.svg" alt="logo" />
+            </a>
+            <a class="navbar-brand brand-logo-mini" href="index.html">
+              <img src="assets/img/logo.svg" alt="logo" />
+            </a>
+          </div>
+        </div>
+        <div class="navbar-menu-wrapper d-flex align-items-top"> 
+          <ul class="navbar-nav">
+            
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown mr-3"> 
+              <a class="nav-link count-indicator text-terqoise" id="countDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                <!-- <i class="icon-bell"></i> -->
+                <i class="far fa-bell text-terqoise"></i>
+                <span class="count"></span>
+              </a>
+            </li>
+            <li class="nav-item mr-3">
+              <a class="nav-link count-indicator" id="notificationDropdown" href="#" data-bs-toggle="dropdown">
+                <i class="icon-mail icon-lg text-terqoise"></i>
+              </a>
+            </li>
+            <li class="nav-item dropdown d-none d-lg-block user-dropdown">
+              <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                <img class="img-xs rounded-circle" src="assets/img/faces/face01.jpg" alt="Profile image"> </a>
+            </li>
+            <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
+              <h6 class="welcome-text text-terqoise"><span class="fw-bold">Ahmed Zaki</span></h6>
+              <a href="#!" class="welcome-sub-text text-white">View your account</a>
+            </li>
+          </ul>
+          <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-bs-toggle="offcanvas">
+            <span class="mdi mdi-menu"></span>
+          </button>
+        </div>
+      </nav>
+      <div class="container-fluid page-body-wrapper">
+        
+        
+        <div id="right-sidebar" class="settings-panel">
+         
+          
+        </div>
+
+    
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="dashboard.html">
+                <img src="./assets/img/dashboard.svg" alt="">
+                <div class="list">
+                  <span class="sub-title d-block">Dashboard</span>
+                  <span class="menu-title">Dashboard Overview</span>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item activelink">
+              <span class="jobs-links">
+                <img src="./assets/img/job.svg" alt="">
+                <div class="list">
+                  <span class="sub-title d-block">Jobs</span>
+                  <ul class="ml-0">
+                    <li class="">
+                      <a href="job-list.html" class="menu-title">Job List</a>
+                    </li>
+                    <li class="active">
+                      <a href="new-job.html" class="menu-title"> New Job</a>
+                    </li>
+                  </ul>
+                </div>
+              </span>
+            </li>
+            
+          </ul>
+        </nav>
+
+        <div class="main-panel">
+          <div class="jumbotron p-4">
+              <div class="d-flex justify-content-between align-items-center">
+                <h1>Create New Job</h1>
+                <nav aria-label="breadcrumb" class="mb-0 pb-0">
+                  <ol class="breadcrumb m-0 p-0 border-0">
+                    <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                    <li class="breadcrumb-item"><a href="#">Jobs</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Jobs List</li>
+                  </ol>
+                </nav>
+              </div>
+          </div>
+          <div class="content-wrapper pt-5 newJobs-container">
+            <div class="row">
+              <!-- button -->
+              <div class="col-md-12">
+                <div class="d-flex justify-content-end align-items-end">
+                  <a href="job-list.html" class="btn btn-success">
+                    <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.96967 5.46967C0.676777 5.76256 0.676777 6.23744 0.96967 6.53033L5.74264 11.3033C6.03553 11.5962 6.51041 11.5962 6.8033 11.3033C7.09619 11.0104 7.09619 10.5355 6.8033 10.2426L2.56066 6L6.8033 1.75736C7.09619 1.46447 7.09619 0.989593 6.8033 0.696699C6.51041 0.403806 6.03553 0.403806 5.74264 0.696699L0.96967 5.46967ZM15.5 5.25L1.5 5.25V6.75L15.5 6.75V5.25Z" fill="white"/>
+                      </svg>
+                      <span>Back to job list</span></a>
+                </div>
+              </div>
+              <!-- / -->
+              <div class="col-md-12 mt-4">
+                <div class="alert alert-danger" role="alert">
+                  <div class="alert-message">
+                    <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.8651 0.999956L21.3911 17.5C21.4789 17.652 21.5251 17.8244 21.5251 18C21.5251 18.1755 21.4789 18.3479 21.3911 18.4999C21.3034 18.652 21.1771 18.7782 21.0251 18.866C20.8731 18.9537 20.7007 19 20.5251 19H1.47312C1.29758 19 1.12514 18.9537 0.973128 18.866C0.821112 18.7782 0.694878 18.652 0.607113 18.4999C0.519347 18.3479 0.473143 18.1755 0.473145 18C0.473146 17.8244 0.519352 17.652 0.607119 17.5L10.1331 0.999956C10.2209 0.847949 10.3471 0.721722 10.4991 0.633962C10.6512 0.546202 10.8236 0.5 10.9991 0.5C11.1746 0.5 11.3471 0.546202 11.4991 0.633962C11.6511 0.721722 11.7773 0.847949 11.8651 0.999956ZM3.20512 17H18.7931L11.0001 3.49996L3.20512 17ZM9.99912 14H11.9991V16H9.99912V14ZM9.99912 6.99996H11.9991V12H9.99912V6.99996Z" fill="#C7376D"/>
+                    </svg>
+                    <span>Sorry, the email address you entered is not valid. Please check your entry and try again.</span>
+                  </div>
+                  <div class="remove">
+                  <span>×</span>
+                  </div>
+                </div>
+                
+                <form class="forms-sample" id="myForm">
+                <div class="card">
+                  <div class="card-body">
+                  
+                      <div class="row m-0">
+                      <div class="col-md-8 p-0">
+                        <div class="tasks">
+                          <div class="row m-0">
+                            <div class="col-md-6">
+                                  <div class="form-group">
+                                    <label for="nameInput">Customer name</label>
+                                    <input type="text" class="form-control" id="nameInput" />
+                                  </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="emailInput">Customer Email</label>
+                                <input type="email" class="form-control" id="emailInput"/>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="phoneInput">Phone Number</label>
+                                <input type="tel" class="form-control" id="phoneInput" />
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="exampleInputComplaint">Complaint Related to:</label>
+                                <select name="" id="">
+                                  <option value="1">Customer Services</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                  <label for="exampleInputConfirmPassword1">Complaint Details:</label>
+                                  <textarea name="" class="form-control" id=""></textarea>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 p-0">
+                        <div class="task-managments">
+                          <div class="d-flex flex-column">
+                              <div class="col-md-12">
+                                  <div class="form-group priority">
+                                    <label for="exampleInputComplaint">priority</label>
+                                    <select name="" id="">
+                                      <option value="1">Medium</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group skillset">
+                                    <label for="exampleInputComplaint">skillset</label>
+                                    <select name="" id="">
+                                      <option value="1">Data Scientist</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group availability">
+                                    <label for="exampleInputComplaint">availability</label>
+                                    <select name="" id="">
+                                      <option value="1">Free</option>
+                                      <option value="2">busy</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group assign">
+                                    <label for="exampleInputComplaint">Assign Job to</label>
+                                    <select name="" id="">
+                                      <option value="1">John Adel</option>
+                                      <option value="1">Mohamed Ali</option>
+                                      <option value="1">Hani Islam</option>
+                                    </select>
+                                  </div>
+                                </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                     
+                   
+                    
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <button type="submit" class="btn btn-primary me-2">Submit Complaint</button>
+                </div>
+              </form>
+              </div>
+            </div>
+          </div>
+          <!-- content-wrapper ends -->
+          <footer class="footer">
+            <div class="d-sm-flex justify-content-end justify-content-sm-end">
+              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">© 2010-2023 IdealSolutions</span>
+            </div>
+          </footer>
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+
+    <!-- JavaScript -->
+    <script
+    src="https://code.jquery.com/jquery-3.7.0.js"
+    integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+    crossorigin="anonymous"></script>
+    <script src="assets/javascript/uicreep-minify.js"></script>
+</body>
+
+</html>

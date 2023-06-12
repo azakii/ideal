@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> IdealSolutions </title>
+    <link rel="icon" type="assets/img/favicon.ico" href="./assets/img/favicon.ico" />
+    <meta name="description" content="IdealSolutions Theme">
+    <meta name="author" content="azaki">
+    <meta name="theme-color" content="#FFF200" />
+    <!-- CSS -->
+    <link href="assets/stylesheet/uicreep.css" rel="stylesheet">
+    <link href="assets/stylesheet/custom.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+    <div class="container-scroller">
+      <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
+        <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
+          <div class="me-3">
+            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-bs-toggle="minimize">
+              <span class="icon-menu"></span>
+            </button>
+          </div>
+          <div>
+            <a class="navbar-brand brand-logo" href="index.html">
+              <img src="assets/img/logo.svg" alt="logo" />
+            </a>
+            <a class="navbar-brand brand-logo-mini" href="index.html">
+              <img src="assets/img/logo.svg" alt="logo" />
+            </a>
+          </div>
+        </div>
+        <div class="navbar-menu-wrapper d-flex align-items-top"> 
+          <ul class="navbar-nav">
+            
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown mr-3"> 
+              <a class="nav-link count-indicator text-terqoise" id="countDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                <!-- <i class="icon-bell"></i> -->
+                <i class="far fa-bell text-terqoise"></i>
+                <span class="count"></span>
+              </a>
+            </li>
+            <li class="nav-item mr-3">
+              <a class="nav-link count-indicator" id="notificationDropdown" href="#" data-bs-toggle="dropdown">
+                <i class="icon-mail icon-lg text-terqoise"></i>
+              </a>
+            </li>
+            <li class="nav-item dropdown d-none d-lg-block user-dropdown">
+              <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                <img class="img-xs rounded-circle" src="assets/img/faces/face01.jpg" alt="Profile image"> </a>
+            </li>
+            <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
+              <h6 class="welcome-text text-terqoise"><span class="fw-bold">Ahmed Zaki</span></h6>
+              <a href="#!" class="welcome-sub-text text-white">View your account</a>
+            </li>
+          </ul>
+          <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-bs-toggle="offcanvas">
+            <span class="mdi mdi-menu"></span>
+          </button>
+        </div>
+      </nav>
+      <div class="container-fluid page-body-wrapper">
+        
+        
+        <div id="right-sidebar" class="settings-panel">
+         
+          
+        </div>
+
+    
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="dashboard.html">
+                <img src="./assets/img/dashboard.svg" alt="">
+                <div class="list">
+                  <span class="sub-title d-block">Dashboard</span>
+                  <span class="menu-title">Dashboard Overview</span>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item activelink">
+              <span class="jobs-links">
+                <img src="./assets/img/job.svg" alt="">
+                <div class="list">
+                  <span class="sub-title d-block">Jobs</span>
+                  <ul class="ml-0">
+                    <li class="">
+                      <a href="job-list.html" class="menu-title">Job List</a>
+                    </li>
+                    <li class="active">
+                      <a href="new-job.html" class="menu-title"> New Job</a>
+                    </li>
+                  </ul>
+                </div>
+              </span>
+            </li>
+            
+          </ul>
+        </nav>
+
+        <div class="main-panel">
+          <div class="jumbotron p-4">
+              <div class="d-flex justify-content-between align-items-center">
+                <h1>Create New Job</h1>
+                <nav aria-label="breadcrumb" class="mb-0 pb-0">
+                  <ol class="breadcrumb m-0 p-0 border-0">
+                    <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                    <li class="breadcrumb-item"><a href="#">Jobs</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Jobs List</li>
+                  </ol>
+                </nav>
+              </div>
+          </div>
+          <div class="content-wrapper pt-5 newJobs-container d-flex justify-content-end align-items-start">
+            <div id="successMessage" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
+              <div class="d-flex">
+                <div class="icon">
+                  <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 1.625C16.0168 1.625 18.9101 2.82343 21.0433 4.95666C23.1766 7.08989 24.375 9.98316 24.375 13C24.375 16.0168 23.1766 18.9101 21.0433 21.0433C18.9101 23.1766 16.0168 24.375 13 24.375C9.98316 24.375 7.08989 23.1766 4.95666 21.0433C2.82343 18.9101 1.625 16.0168 1.625 13C1.625 9.98316 2.82343 7.08989 4.95666 4.95666C7.08989 2.82343 9.98316 1.625 13 1.625ZM11.583 15.2441L9.05612 12.7156C8.96554 12.625 8.85799 12.5532 8.73964 12.5042C8.62128 12.4551 8.49442 12.4299 8.36631 12.4299C8.2382 12.4299 8.11135 12.4551 7.99299 12.5042C7.87463 12.5532 7.76709 12.625 7.6765 12.7156C7.49355 12.8986 7.39077 13.1467 7.39077 13.4054C7.39077 13.6642 7.49355 13.9123 7.6765 14.0952L10.894 17.3128C10.9843 17.4038 11.0918 17.4761 11.2102 17.5254C11.3286 17.5747 11.4556 17.6001 11.5838 17.6001C11.7121 17.6001 11.839 17.5747 11.9574 17.5254C12.0758 17.4761 12.1833 17.4038 12.2736 17.3128L18.9361 10.6486C19.0279 10.5584 19.101 10.4509 19.151 10.3323C19.201 10.2138 19.2271 10.0865 19.2277 9.95775C19.2283 9.82905 19.2034 9.7015 19.1545 9.58246C19.1055 9.46342 19.0335 9.35526 18.9426 9.26419C18.8516 9.17313 18.7435 9.10098 18.6245 9.0519C18.5056 9.00281 18.378 8.97778 18.2493 8.97822C18.1206 8.97867 17.9933 9.00459 17.8747 9.0545C17.756 9.10441 17.6484 9.17731 17.5581 9.269L11.583 15.2441Z" fill="#039100"/>
+                    </svg>
+                </div>
+                <div class="">
+                  <h4 class="text-green">Job has been added</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur. Neque risus egestas a lectus velit viverra ut.</p>
+                  <small>1 Second ago</small>
+                </div>
+              </div>
+            </div>
+            
+      
+          </div>
+          <!-- content-wrapper ends -->
+          <footer class="footer">
+            <div class="d-sm-flex justify-content-end justify-content-sm-end">
+              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">© 2010-2023 IdealSolutions</span>
+            </div>
+          </footer>
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+
+    <!-- JavaScript -->
+    <script
+    src="https://code.jquery.com/jquery-3.7.0.js"
+    integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+    crossorigin="anonymous"></script>
+    <script src="assets/javascript/uicreep-minify.js"></script>
+</body>
+
+</html>
